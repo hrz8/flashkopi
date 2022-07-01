@@ -3,7 +3,8 @@ import sizeOf from 'image-size';
 export enum DimensionDominant {
   SQUARE = 'square',
   HORIZONTAL = 'horizontal',
-  VERTICAL = 'vertical'
+  VERTICAL = 'vertical',
+  UNKNOWN = 'unknown'
 }
 
 export const getDominant = (img: Buffer): DimensionDominant => {
