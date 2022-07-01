@@ -1,0 +1,12 @@
+{
+  "name": "flashkopi",
+  "scripts": {
+    "build": "yarn build:url-to-image",
+    "build:url-to-image": "cd packages/url-to-image && yarn build && cd ..",
+    "publish:package": "yarn build && lerna publish",
+    "publish:package:canary": "yarn build && lerna publish --canary"
+  },
+  "devDependencies": {
+    "lerna": "^5.1.6"
+  }
+}
